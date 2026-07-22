@@ -1,8 +1,15 @@
 ﻿# Models
 
-## Trained Models
-- Stable Diffusion LoRA
-- 空间分类器
-- 行为预测模型
+## Trained Models & Weights
 
-记录模型版本、参数和训练日志。
+| Model | Type | Description | Size |
+|---|---|---|---|
+| sd-arch-lora-v1 | LoRA | Architectural style fine-tune for SDXL | ~150MB |
+| campus-controlnet | ControlNet | Site plan conditioned generation | ~1.5GB |
+
+### Usage
+LoRA weights can be loaded in ComfyUI or Diffusers.
+
+### Notes
+- Large model files should use Git LFS
+- Track training configs in this directory

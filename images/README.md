@@ -1,7 +1,19 @@
 ﻿# Images
 
 ## Contents
-- 分析图
-- AI生成图
-- 模型截图
-- 工作流示意图
+
+This directory stores visual assets generated during the research process.
+
+### Categories
+
+- **analysis/** — Data visualization, flow heatmaps, spatial analysis charts
+- **generations/** — AI-generated design concepts from Stable Diffusion
+- **renderings/** — Rhino/Blender architectural renderings
+- **photos/** — Site photos, reference images
+- **diagrams/** — Workflow diagrams, system architecture
+
+### File Naming Convention
+
+```
+{category}_{date}_{description}.png
+```
