@@ -1,8 +1,8 @@
-﻿\"\"\"
+"""
 AI-Architecture-Research - Spatial Analysis Module
 ====================================================
 Analyzes spatial configurations and generates optimization insights.
-\"\"\"
+"""
 
 import numpy as np
 from dataclasses import dataclass
@@ -18,13 +18,13 @@ class SpatialMetrics:
 
 
 class SpatialAnalyzer:
-    \"\"\"Analyze architectural spatial configurations.\"\"\"
+    """Analyze architectural spatial configurations."""
     
     def __init__(self, resolution=50):
         self.resolution = resolution
     
     def compute_circulation(self, flow_matrix):
-        \"\"\"Compute circulation efficiency score (0-1).\"\"\"
+        """Compute circulation efficiency score (0-1)."""
         total = flow_matrix.sum()
         if total == 0:
             return 0.0
@@ -33,8 +33,8 @@ class SpatialAnalyzer:
         return float(entropy / max_entropy) if max_entropy > 0 else 0.0
 
 
-if __name__ == \"__main__\":
+if __name__ == "__main__":
     analyzer = SpatialAnalyzer()
     flow = np.random.rand(10, 10)
     efficiency = analyzer.compute_circulation(flow)
-    print(f\"Circulation efficiency: {efficiency:.3f}\")
+    print(f"Circulation efficiency: {efficiency:.3f}")
